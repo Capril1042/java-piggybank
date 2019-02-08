@@ -25,5 +25,6 @@ public class Main
         System.out.println(piggyBank.getContent());
 //        Print the value of the Piggy Bank
         System.out.println(piggyBank.getTotalValue());
+
     }
 }

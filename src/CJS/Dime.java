@@ -9,13 +9,13 @@ public class Dime extends Coins
     public Dime(int amount)
     {
         this.amount = amount;
-        this.value = amount * this.value;
+        this.value = amount * 0.10;
     }
 
     public Dime()
     {
         this.amount = 1;
-        this.value = this.value;
+        this.value = 0.10;
 
     }
 

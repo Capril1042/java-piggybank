@@ -2,19 +2,19 @@ package CJS;
 
 public class Dollar extends Coins
 {
-    static double value = 1.0;
+    static double value = 1.00;
     int amount;
 
     public Dollar()
     {
         this.amount = 1;
-        this.value = this.value;
+        this.value = 1;
     }
 
     public Dollar(int amount)
     {
         this.amount = amount;
-        this.value = amount * this.value;
+        this.value = amount * 1.0;
     }
 
     @Override
@@ -38,7 +38,7 @@ public class Dollar extends Coins
     @Override
     public String print()
     {
-        String s = this.getName() +  this.getAmount();
+        String s = this.getName() +  this.amount;
         return s;
     }
 }

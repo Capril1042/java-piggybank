@@ -10,17 +10,18 @@ public class Bank
 
     public Bank()
     {
-        this.totalValue= totalValue;
+        this.totalValue = totalValue;
         this.content = new ArrayList<Coins>();
     }
 
     public void deposit(Coins c){
       content.add(c);
-      this.totalValue = this.totalValue + c.getValue();
+      this.totalValue = this.totalValue + (c.getValue());
     }
 
     public String getTotalValue(){
-      String s = "The Piggy Bank holds $" + String.format("%.2f",this.totalValue);
+
+      String s = "The Piggy Bank holds $" + String.format("%.2f", this.totalValue);
       return s;
     }
 
@@ -28,7 +29,6 @@ public class Bank
       String s = " ";
       for (int i = 0; i < content.size() ; i++)
       {
-
         s = s + content.get(i).print() + "\n";
       }
 
